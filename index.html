@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
+    <title>The Band</title>
+</head>
+
+<body>
+    <div id="main">
+
+        <!-- Begin:Header -->
+        <div id="header">
+            <!-- Begin:Navigation -->
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- Sub-Navigation -->
+                <li>
+                    <a href="#">More<i class="fas fa-caret-down"></i></a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="search"><i class="fas fa-search"></i></span>
+            <span id="mobile-menu" class="menu-mobile"><i class="fas fa-bars"></i></span>
+        </div>
+
+        <!-- Begin:Slider -->
+        <div id="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <div class="slide first">
+                    <img src="./images/la.jpg" alt="">
+                    <div class="heading">
+                        <h3 class="disc-heading">New York</h3>
+                        <div class="disc-subheading">The atmosphere in New York is lorem ipsum.</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./images/ny.jpg" alt="">
+                    <div class="heading">
+                        <h3 class="disc-heading">Los Angeles</h3>
+                        <div class="disc-subheading">Thank you, Chicago - A night we won't forget.</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./images/chicago.jpg" alt="">
+                    <div class="heading">
+                        <h3 class="disc-heading">Chicago</h3>
+                        <div class="disc-subheading">We had the best time playing at Venice Beach!</div>
+                    </div>
+                </div>
+                <!-- automatic navigation -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+            <!-- manual navigation -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+
+
+
+        <!-- Begin:Content -->
+        <div id="band" class="content">
+            <div class="section member">
+                <h2 class="content-heading">THE BAND</h2>
+                <p class="content-subheading">We love music</p>
+                <p class="about-section">We have created a fictional band website. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <div class="member-list">
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./images/bandmember.jpg" alt="bandmember">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./images/bandmember.jpg" alt="bandmember">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./images/bandmember.jpg" alt="bandmember">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div id="tour" class="content">
+            <div class="section member">
+                <h2 class="content-heading">TOUR DATES</h2>
+                <p class="content-subheading">Remember to book your tickets!</p>
+                <br>
+                <ul class="ticket-list">
+                    <li class="ticket-item">September <span class="sold-out">Sold out</span></li>
+                    <li class="ticket-item">October <span class="sold-out">Sold out</span></li>
+                    <li class="ticket-item">November <span class="ticket-number">3</span></li>
+                    <div class="clear"></div>
+                </ul>
+
+                <div class="place-list">
+                    <div class="place-item">
+                        <img src="./images/place1.jpg" alt="">
+                        <div class="place-disc">
+                            <p class="place-name">New York</p>
+                            <p class="place-time">Fri 27 Nov 2016</p>
+                            <p class="about-place">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="place-item">
+                        <img src="./images/place2.jpg" alt="">
+                        <div class="place-disc">
+                            <p class="place-name">New York</p>
+                            <p class="place-time">Fri 27 Nov 2016</p>
+                            <p class="about-place">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="place-item">
+                        <img src="./images/place3.jpg" alt="">
+                        <div class="place-disc">
+                            <p class="place-name">New York</p>
+                            <p class="place-time">Fri 27 Nov 2016</p>
+                            <p class="about-place">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="content">
+            <div class="section member">
+                <h2 class="content-heading">CONTACT</h2>
+                <p class="content-subheading">Fan? Drop a note!</p>
+                <div class="row contact-form">
+                    <div class="col col-5 info">
+                        <p><i class="fas fa-map-marker-alt"></i>Ha Noi, Viet Nam</p>
+                        <p><i class="fas fa-phone-alt"></i>Phone:+83 362977647</p>
+                        <p><i class="fas fa-envelope"></i>Email:huyyenthanh1999@gmail.com</p>
+                    </div>
+                    <div class="col col-5 contact-input">
+                        <form action="">
+                            <div class="row mb-8">
+                                <div class="col col-5  mb-8">
+                                    <input placeholder="Name" required type="text">
+                                </div>
+                                <div class="col col-5 ">
+                                    <input placeholder="Email" required type="email">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-1">
+                                    <input placeholder="Message" type="text" required name="" id="">
+                                </div>
+                                <button class="btn send" type="submit">SEND</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="clear"></div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Map -->
+        <div class="map">
+            <img src="./images/map.jpg" alt="map">
+        </div>
+        <!-- Begin:Footer -->
+        <div id="footer">
+            <p class="logo">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-snapchat-square"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </p>
+            <p class="powerby">Powered by <a href="">w3.css</a></p>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    // slide
+
+    // dong mo menu-mobile
+    var header = document.getElementById('header'),
+        menuMobile = document.getElementById('mobile-menu'),
+        headerHeight = header.clientHeight;
+    menuMobile.onclick = function () {
+        var isClose = header.clientHeight === headerHeight;
+        if (isClose) {
+            header.style.height = 'auto';
+        } else {
+            header.style.height = '46px';
+        }
+    }
+    // dong mo menu item
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+    for (var i = 0; i < menuItems.length; i++) {
+        var menuItem = menuItems[i];
+        menuItem.onclick = function (event) {
+            var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+            if (!isParentMenu) {
+                header.style.height = null;
+            } else {
+                event.preventDefault();
+            }
+        }
+    }
+
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 3){
+            counter = 1;
+        }
+    },4000)
+</script>
+
+</html>
