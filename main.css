@@ -481,6 +481,7 @@ h2.content-heading {
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
 }
 
 
