@@ -149,6 +149,7 @@ html {
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
+    display: none;
 }
 
 .manual-btn:not(:last-child){
@@ -185,6 +186,7 @@ html {
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
+    display: none;
 }
 
 .navigation-auto div:not(:last-child){
@@ -424,10 +426,12 @@ h2.content-heading {
     border: 1px solid #ddd;
 }
 
+.send__btn {
+    margin-top: 16px;
+}
+
 .send {
     float: right;
-    margin-top: 16px;
-    margin-right: 8px;
 }
 /* end:contact */
 
@@ -464,6 +468,131 @@ h2.content-heading {
     color: #000;
 }
 /* End */
+
+/* css modal buy ticket */
+
+.modal {
+    z-index: 10;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0,0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.modal__container {
+    position: absolute;
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 30px);
+}
+
+.modal-header {
+    position: relative;
+    padding: 32px 16px;
+    color: #fff;
+    background-color: #009688;
+    text-align: center;
+}
+
+.modal-header h2 {
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.modal__header-icon {
+
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
+}
+
+.modal__close-btn:hover,.close-btn:hover,.pay-btn:hover {
+    background-color: #ddd;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal__close-btn i {
+    line-height: 36px;
+}
+
+.modal__content {
+    padding: 0 16px;
+}
+
+.modal__buy-form {
+
+}
+
+.modal__buy-form label {
+    margin: 15px 0;
+    display: block;
+}
+
+.modal__buy-form input {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+.pay-btn {
+    width: 100%;
+    background-color: #009688;
+    color: #fff;
+    padding: 16px;
+    margin: 16px 0;
+    line-height: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+.pay-btn i {
+    margin-left: 5px;
+}
+
+.pay-btn:active {
+    transform: scale(0.98);
+}
+
+.modal__footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.close-btn {
+    background-color: #f44336;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    margin: 15px 0;
+}
+
+.close-btn i {
+    margin-left: 5px;
+}
+
+.modal__footer a {
+    color: #009688;
+}
+
+.help-corner {
+    margin: 15px 0;
+}
 
 /* Mobile */
 @media (max-width:739px){
@@ -510,4 +639,29 @@ h2.content-heading {
     .slide .heading {
         display: none;
     }
+
 }
+/* @media (min-width:993px){
+    .modal__container {
+        width: 900px;
+    }
+}
+
+@media (max-width:992px) and (min-width:769px) {
+    .modal__container{
+        width: 600px;
+    }
+}
+
+@media (max-width:768px) and (min-width:601px) {
+    .modal__container {
+        width: 500px;
+    }
+}
+
+@media (max-width:600px){
+    .modal__container {
+        margin: 0 10px;
+        width: auto !important;
+    }
+} */

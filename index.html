@@ -128,7 +128,7 @@
                             <p class="place-name">New York</p>
                             <p class="place-time">Fri 27 Nov 2016</p>
                             <p class="about-place">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="btn">Buy Tickets</button>
+                            <button class="btn" onclick="buyTicket()">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="place-item">
@@ -137,7 +137,7 @@
                             <p class="place-name">New York</p>
                             <p class="place-time">Fri 27 Nov 2016</p>
                             <p class="about-place">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="btn">Buy Tickets</button>
+                            <button class="btn" onclick="buyTicket()">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="place-item">
@@ -146,7 +146,7 @@
                             <p class="place-name">New York</p>
                             <p class="place-time">Fri 27 Nov 2016</p>
                             <p class="about-place">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="btn">Buy Tickets</button>
+                            <button class="btn" onclick="buyTicket()">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="clear"></div>
@@ -178,8 +178,12 @@
                                 <div class="col col-1">
                                     <input placeholder="Message" type="text" required name="" id="">
                                 </div>
-                                <button class="btn send" type="submit">SEND</button>
+                                <div class="clear"></div>            
                             </div>
+                            <div class="send__btn">
+                                <button class="btn send" type="submit">SEND</button> 
+                                <div class="clear"></div>
+                            </div>    
                         </form>
                     </div>
                     <div class="clear"></div>
@@ -204,7 +208,45 @@
             <p class="powerby">Powered by <a href="">w3.css</a></p>
         </div>
     </div>
-
+    <!-- modal buy ticket -->
+    <div class="modal">
+        <div class="modal__container">
+            <div class="modal-header">
+                <h2>
+                    <i class="modal__header-icon fas fa-briefcase"></i>
+                    Tickets
+                </h2>
+                <div class="modal__close-btn" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="modal__content">
+                <form class="modal__buy-form">
+                    <label for="">
+                        <i class="fa fa-shopping-cart"></i>
+                        Tickets, $15 per person        
+                    </label>
+                    <input type="text" name="" placeholder="How many?" id="">
+                    <label for="">
+                        <i class="fa fa-user"></i>
+                        Send To        
+                    </label>
+                    <input type="text" name="" placeholder="Enter email" id="">
+                    <button class="pay-btn">PAY<i class="fas fa-check"></i></button>
+                </form>
+                <div class="modal__footer">
+                    <button class="close-btn" onclick="closeModal()">
+                        Close
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="help-corner">
+                        <span>Need <a href="">help?</a></span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 
 </body>
 <script>
@@ -235,7 +277,7 @@
             }
         }
     }
-
+    // slider autoplay
     var counter = 1;
     setInterval(function(){
         document.getElementById('radio' + counter).checked = true;
@@ -244,6 +286,16 @@
             counter = 1;
         }
     },4000)
+
+    // buy ticket function
+    var modal = document.querySelector(".modal");
+    function buyTicket(){
+        modal.style.display ="";
+    }
+
+    function closeModal(){
+        modal.style.display = "none"
+    }
 </script>
 
 </html>
